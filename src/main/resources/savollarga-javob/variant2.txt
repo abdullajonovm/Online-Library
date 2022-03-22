@@ -1,0 +1,90 @@
+
+
+                                           Question F:
+===================================================================================================================
+                                        1.@Qualifier anotatsiyasi:
+            Biz bir xil turdagi bir nechta bean yaratganimizda vaziyat bo'lishi mumkin,
+        lekin bazida bizga malum bir bean kerak bo'ladi. @Qualifier anotatsiyasi Springga
+                               qaysi bean kerakligini aytish uchun ishlatiladi.
+
+                                        2.@Scope anotatsiyasi
+
+===================================================================================================================
+
+
+
+
+
+                                           Question G:
+===================================================================================================================
+                                          @ModelAttribute
+
+                             1.ModelAttributeni method sifatida qo'llash
+       Method sifatida qo'llaganimizda bir nechta ModelAttributelarni qo'shishimiz mumkinligini bildiragdi.
+             Bu usulda @RequestMapping usullari bilan bir xil argument turlarini qo'llab-quvvatlaydi.
+
+
+                             2.ModelAttributeni argumnet sifatida qo'llash
+       ModelAttributeni annotatsiyasini argumenti sifatida ishlatganimizda, u argumentni modeldan olishni bildiradi.
+            ModelAttributeni annotatsiyasi bo'lmaganda, u avval namunaga kiritilishi va keyin modelga
+                qo'shilishi kerak. Modelda mavjud bo'lgandan so'ng, argumentlar  nomlari mos
+                        keladigan barcha request parametrlaridan to'ldirilishi kerak.
+
+
+===================================================================================================================
+
+
+
+                                           Question H:
+
+===================================================================================================================
+
+                                                @PathVarible
+        PathVarible annotatsiyasi Frontent tomonidan kelgan parametrlarni ushlab olish, ishlash uchun ishlatiladi.
+               Bu annotatsiya faqat bitta o'zgaruvchi uchun ishlatiladi. Nechta parametr bilan sihlash kerak
+                                     bo'lsa shuncha marta qo'yishimiz kerak.
+
+
+                                                 @RequestParam
+
+
+                                        @PathVarible  VS  @RequestParam
+       PathVariblening defaultValuesi mavjud emas.
+       RequestParamning defaultValuesi bo'ladi defaultValue() default "\n\t\t\n\t\t\n\ue000\ue001\ue002\n\t\t\t\t\n";
+
+                                        👆 Bu ma'lumotlar intelliJ IDEA dan
+
+
+===================================================================================================================
+
+
+                                           Question I:
+
+===================================================================================================================
+
+        Spring MVC ilovasidagi tashvishlar aniq ajratilganligini hisobga olsak, bir ko'rish texnologiyasidan boshqasiga
+                o'tish birinchi navbatda konfiguratsiya masalasidir.Har bir ko'rinish turini ko'rsatish uchun
+                   har bir texnologiyaga mos keladigan ViewResolver fasolini aniqlashimiz kerak. Bu shuni
+                      anglatadiki, biz JSP fayllarini odatda qaytarganimizdek @Controller xaritalash
+                              usullaridan ko'rinish nomlarini qaytarishimiz mumkin.
+
+===================================================================================================================
+
+
+
+                                           Question J:
+
+===================================================================================================================
+
+                                       Dependency Injection
+
+         Dependency injection - bu ob'ekt o'zi bog'liq bo'lgan boshqa ob'ektlarni qabul qilish usuli bo'lib, ular
+            bog'liqliklar deb ataladi . Odatda, qabul qiluvchi ob'ekt mijoz deb ataladi va o'tkazilgan
+                                injected ob'ekt xizmat deb ataladi.
+
+
+                                                IoC
+         IoC bu Spring Frameworkning yadrosidir. U ob'ektlarni yaratadi, ularning bog'liqliklarini sozlaydi va yig'adi,
+            ularning butun hayot aylanishini boshqaradi. Konteyner ilovani tashkil etuvchi komponentlarni
+                        boshqarish uchun Dependency Injection (DI) dan foydalanadi.
+

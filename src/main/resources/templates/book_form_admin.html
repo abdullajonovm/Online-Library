@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+
+</head>
+<body>
+<div class="container-fluid text-center" align="center">
+    <div><h2 class="bg-info">Book Page Admin</h2></div>
+    <div class="m-2">
+        <a class="h3" th:href="@{'/book/save'}">Add New Book</a>
+    </div>
+
+    <div>
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Ctegory Name</th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <th:block th:each="book : ${book}">
+                <tr>
+                    <td>[[${book.id}]]</td>
+                    <td>[[${book.name}]]</td>
+                    <td>[[${book.price}]]</td>
+                    <td>[[${book.category.getName()}]]</td>
+                    <td>
+                        <a class="h4 mr-3" th:href="@{'/book/edit/' + ${book.id}}">Edit</a>
+                        <a class="h4" th:href="@{'/book/delete/' + ${book.id}}">Delete</a>
+                    </td>
+
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Category Page</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+
+</head>
+<body>
+<div class="container-fluid text-center" align="center">
+    <div><h2 class="bg-info">Category Page</h2></div>
+    <div class="m-2">
+        <a class="h3" th:href="@{/category/save}">Add New Category</a>
+    </div>
+    <div>
+        <table class="table table-bordered">
+            <thead class="table-dark">
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th></th>
+<!--                <th></th>-->
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <th:block th:each="category : ${category}">
+                <tr>
+                    <td>[[${category.id}]]</td>
+                    <td>[[${category.name}]]</td>
+                    <td>
+                        <a class="h4 mr-3" th:href="@{'/category/edit/' + ${category.id}}">Edit</a>
+                        <a class="h4" th:href="@{'/category/delete/' + ${category.id}}">Delete</a>
+                    </td>
+                    <td>
+                        <a class="h4 mr-3" th:href="@{'/category/booookkkkk/' + ${category.id}}">Books</a>
+                    </td>
+
+                </tr>
+            </th:block>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+</body>
+</html>
